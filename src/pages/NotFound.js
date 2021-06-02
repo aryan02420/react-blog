@@ -14,6 +14,7 @@ const NotFound = () => {
     // while (time >= 0) {
     //   setTimeout(decTime, 1000)
     // }
+    setTime(3);
   }, []);
 
   return (

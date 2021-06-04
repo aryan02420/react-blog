@@ -1,7 +1,8 @@
 import Home from '@/pages/Home';
+import NewBlog from '@/pages/NewBlog'
 import NotFound from '@/pages/NotFound'
 import Navbar from '@/components/Navbar'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
               {/* <About /> */}
             </Route>
             <Route path="/new">
-              {/* <BlogNew /> */}
+              <NewBlog />
             </Route>
             <Route path="/blogs/:id">
               {/* <BlogFull /> */}

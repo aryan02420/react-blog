@@ -1,7 +1,10 @@
 import BlogCards from '@/components/BlogCards'
+import getFetch from '@/hooks/getFetch'
 
 const Home = () => {
-  let blogs=[
+  const { error, isPending, data: blogs } = getFetch('http://localhost:8000/blogs')
+
+  let blogsl=[
     {
       id: 1,
       title: 'first blog yay!',
@@ -20,7 +23,11 @@ const Home = () => {
     },
   ]
   return (
-    <BlogCards blogs={blogs.sort((a,b) => a.id - b.id).reverse()} />
+    <div className="home">
+      { error && <div>{ error }</div> }
+      { isPending && <div>Loading...</div> }
+      { blogs && <BlogCards blogs={blogs.sort((a,b) => a.id - b.id).reverse()} /> }
+    </div>
   );
 }
 

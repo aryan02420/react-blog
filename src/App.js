@@ -1,5 +1,6 @@
 import Home from '@/pages/Home';
 import NewBlog from '@/pages/NewBlog'
+import Blog from '@/pages/Blog'
 import NotFound from '@/pages/NotFound'
 import Navbar from '@/components/Navbar'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
@@ -21,7 +22,7 @@ function App() {
               <NewBlog />
             </Route>
             <Route path="/blogs/:id">
-              {/* <BlogFull /> */}
+              <Blog />
             </Route>
             <Route path="*">
               <NotFound />

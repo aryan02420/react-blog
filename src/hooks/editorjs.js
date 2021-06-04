@@ -29,7 +29,7 @@ const Editor = (elem_id, data, readonly) => {
             placeholder: 'Let`s write an awesome story!',
             readOnly: readonly ?? false,
           }) )
-    }, [])
+    }, [elem_id, data, readonly])
     return editor
 }
 

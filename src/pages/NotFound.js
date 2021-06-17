@@ -6,6 +6,7 @@ const NotFound = () => {
   const [time, setTime] = useState(5);
 
   useEffect(() => {
+    setTime(3)
     // const decTime = function() {
     //   let t = time
     //   setTime(--t);

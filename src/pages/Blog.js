@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 const BlogDetails = () => {
   const { id } = useParams()
   const blogs = useSelector((state) => state.blogs)
-  const currentBlog = blogs.find(blog => blog.id === +id)
+  const currentBlog = blogs.find((blog) => blog.id === +id)
   const editor = useRef({})
   const [editorReady, setEditorReady] = useState(false)
 
@@ -21,7 +21,7 @@ const BlogDetails = () => {
     if (editorReady && currentBlog && currentBlog.content) {
       editor.current.render(currentBlog.content)
     }
-  }, [editorReady])
+  }, [editorReady, currentBlog])
 
   return (
     <div className="blog-details">

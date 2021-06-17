@@ -65,7 +65,7 @@ const NewBlog = () => {
       setIsPending(false)
       redirect.current = true
     }
-  }, [postData])
+  }, [postData, dispatch, id])
 
   return (
     <div id="new-blog">

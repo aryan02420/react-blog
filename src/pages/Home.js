@@ -10,7 +10,7 @@ const Home = () => {
   const dispatch = useDispatch()
   useEffect(() => {
     blogs.length === 0 && !error && !isPending && dispatch(setBlog(data))
-  }, [data, isPending])
+  }, [data, isPending, blogs.length, dispatch, error])
 
   return (
     <div className="home">

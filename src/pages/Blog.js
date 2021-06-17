@@ -1,5 +1,4 @@
 import { useParams } from 'react-router-dom'
-import getFetch from '@/hooks/getFetch'
 import editorjs from '@/hooks/editorjs.js'
 import { useEffect, useState, useRef } from 'react'
 import { useSelector } from 'react-redux'
@@ -7,7 +6,7 @@ import { useSelector } from 'react-redux'
 const BlogDetails = () => {
   const { id } = useParams()
   const blogs = useSelector((state) => state.blogs)
-  const currentBlog = blogs.find(blog => blog.id == id)
+  const currentBlog = blogs.find(blog => blog.id === +id)
   const editor = useRef({})
   const [editorReady, setEditorReady] = useState(false)
 
@@ -28,7 +27,6 @@ const BlogDetails = () => {
     <div className="blog-details">
       {!editorReady && <div>Loading...</div>}
       <div id="blog-viewer"></div>
-      {/* <pre>{blogs && JSON.stringify(blogs.content, null, 2)}</pre> */}
     </div>
   )
 }

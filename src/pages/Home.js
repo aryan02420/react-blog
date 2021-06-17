@@ -1,6 +1,6 @@
 import BlogCards from '@/components/BlogCards'
 import getFetch from '@/hooks/getFetch'
-import * as blogActions from '@/actions/blogs.actions'
+import { setBlog } from '@/actions/blogs.actions'
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 
@@ -9,9 +9,8 @@ const Home = () => {
   const blogs = useSelector((state) => state.blogs)
   const dispatch = useDispatch()
   useEffect(() => {
-    !error && !isPending && dispatch(blogActions.setBlog(data))
+    blogs.length === 0 && !error && !isPending && dispatch(setBlog(data))
   }, [data, isPending])
-  console.log(blogs, data)
 
   return (
     <div className="home">

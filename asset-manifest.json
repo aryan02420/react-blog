@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "//aryan02420.github.io/react-blog/static/css/main.d831b69c.chunk.css",
+    "main.js": "//aryan02420.github.io/react-blog/static/js/main.0fdca498.chunk.js",
+    "main.js.map": "//aryan02420.github.io/react-blog/static/js/main.0fdca498.chunk.js.map",
+    "runtime-main.js": "//aryan02420.github.io/react-blog/static/js/runtime-main.9adb0140.js",
+    "runtime-main.js.map": "//aryan02420.github.io/react-blog/static/js/runtime-main.9adb0140.js.map",
+    "static/js/2.e67ae5fc.chunk.js": "//aryan02420.github.io/react-blog/static/js/2.e67ae5fc.chunk.js",
+    "static/js/2.e67ae5fc.chunk.js.map": "//aryan02420.github.io/react-blog/static/js/2.e67ae5fc.chunk.js.map",
+    "index.html": "//aryan02420.github.io/react-blog/index.html",
+    "static/css/main.d831b69c.chunk.css.map": "//aryan02420.github.io/react-blog/static/css/main.d831b69c.chunk.css.map",
+    "static/js/2.e67ae5fc.chunk.js.LICENSE.txt": "//aryan02420.github.io/react-blog/static/js/2.e67ae5fc.chunk.js.LICENSE.txt",
+    "static/media/logo.fb6d40c2.svg": "//aryan02420.github.io/react-blog/static/media/logo.fb6d40c2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9adb0140.js",
+    "static/js/2.e67ae5fc.chunk.js",
+    "static/css/main.d831b69c.chunk.css",
+    "static/js/main.0fdca498.chunk.js"
+  ]
+}

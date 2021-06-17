@@ -6,7 +6,6 @@ const NotFound = () => {
   const [time, setTime] = useState(5);
 
   useEffect(() => {
-    // const abortCont = new AbortController();
     // const decTime = function() {
     //   let t = time
     //   setTime(--t);
@@ -14,7 +13,6 @@ const NotFound = () => {
     // while (time >= 0) {
     //   setTimeout(decTime, 1000)
     // }
-    setTime(3);
   }, []);
 
   return (

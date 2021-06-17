@@ -47,6 +47,7 @@ nav.navbar {
   padding: 1rem 2rem;
   background-color: #2A85B3;
   color: #ffffff;
+  border-radius: 0 0 12px 12px;
 }
 
 nav.navbar * {

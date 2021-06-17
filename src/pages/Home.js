@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 
 const Home = () => {
-  const { error, isPending, data } = getFetch('http://localhost:4000/blogs')
+  const { error, isPending, data } = getFetch('https://aryan02420-json-blog.herokuapp.com/blogs')
   const blogs = useSelector((state) => state.blogs)
   const dispatch = useDispatch()
   useEffect(() => {

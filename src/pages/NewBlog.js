@@ -28,7 +28,7 @@ const NewBlog = () => {
 
   // .then((data) => {
   //   console.log(data)
-  //   const temp = postFetch('http://localhost:4000/blogs/', postData)
+  //   const temp = postFetch('https://aryan02420-json-blog.herokuapp.com/blogs/', postData)
   //   console.log(temp)
   //   setError(temp.error)
   //   setIsPending(temp.isPending)
@@ -60,7 +60,7 @@ const NewBlog = () => {
 
   useEffect(() => {
     if (!!postData) {
-      postFetch('http://localhost:4000/blogs/', postData)
+      postFetch('https://aryan02420-json-blog.herokuapp.com/blogs/', postData)
       dispatch(addBlog({...postData, id: id+1}))
       setIsPending(false)
       redirect.current = true
